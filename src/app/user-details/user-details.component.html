@@ -1,0 +1,43 @@
+<!-- <div>
+    hiii
+    <ul>
+        <li *ngFor="let user of users">
+            {{user.firstName}}
+            {{user.lastName}}
+            {{user.mobileNo}}
+
+        </li>
+    </ul>
+</div> -->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="mt-4">
+           <table class="table">
+               <thead class="table-dark">
+                   <tr>
+                       <th scope="col">FIRST NAME</th>
+                       <th scope="col">LAST NAME</th>
+                       <th scope="col">MOBILE NUMBER</th>
+                       <th scope="col">EMAIL ID</th>
+                       <th scope="col">GENDER</th>
+                       <th scope="col">COUNTRY</th>
+                       <th scope="col">DELETE</th>
+                     </tr>
+               </thead>
+               <tbody class="table-group-divider">
+                   <tr *ngFor="let user of users">
+                       <td>{{user.firstName}}</td>
+                       <td>{{user.lastName}}</td>
+                       <td>{{user.mobileNo}}</td>
+                       <td>{{user.emailId}}</td>
+                       <td>{{user.gender}}</td>
+                       <td>{{user.country}}</td>
+                       <td>
+                           <button class="btn btn-danger" (click)="deleteUser(user)" >Delete</button>
+                       </td>
+                     </tr>
+               </tbody>
+             </table>
+        </div>
+    </div>   
+   </div>

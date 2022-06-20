@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="mt-4">
+           <table class="table">
+               <thead class="table-dark">
+                   <tr>
+                       <th>EID</th>
+                       <th>ENAME</th>
+                       <th>ESALARY</th>
+                     </tr>
+               </thead>
+               <tbody class="table-group-divider">
+                   <tr *ngIf="MinEmp">
+                       <td>{{MinEmp.eId}}</td>
+                       <td>{{MinEmp.eName}}</td>
+                       <td>{{MinEmp.eSalary}}</td>
+                     </tr>
+               </tbody>
+               <br>
+             </table>
+        </div>
+    </div>   
+   </div>
+
+   
